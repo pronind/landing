@@ -151,7 +151,7 @@ ul {
 }
 
 .main__about {
-    margin-top: 35px;
+    margin: 35px auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,8 +232,7 @@ ul {
     font-weight: 600;
     font-size: 24px;
     line-height: 140%;
-    text-align: center;
-    color: $color-white1;
+    color: $color-gray1;
 }
 
 .main__about-services {
@@ -245,15 +244,11 @@ ul {
     margin: 0;
 }
 
-.about-services__list li {
-    padding: 0;
-    margin: 0 0 30px 0;
-}
-
 .about-services__list-item {
     max-width: 345px;
     min-height: 416px;
     padding: 30px 25px;
+    margin: 0 0 30px 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -341,13 +336,9 @@ ul {
     color: $color-white1;
 }
 
-.footer {
-    width: 100%;
-    padding: 0 20px 100px 20px;
-    box-sizing: border-box;
-}
 
-.footer__container {
+
+.main__project {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -355,7 +346,7 @@ ul {
 
 }
 
-.footer__headline {
+.main__project-headline {
     padding: 0;
     margin: 0 0 25px 0;
     font-family: Inter;
@@ -367,14 +358,14 @@ ul {
     color: $color-white1;
 }
 
-.footer__buttons {
+.main__project-buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 25px;
 }
 
-.footer__button-download {
+.project-buttons__button-download {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -383,7 +374,7 @@ ul {
     margin-bottom: 30px;
 }
 
-.footer__button-download:last-child {
+.project-buttons__button-download:last-child {
     margin: 0;
 }
 
@@ -399,13 +390,13 @@ ul {
     align-items: center;
 }
 
-.footer__production {
+.main__project-production {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.footer__production-text {
+.project-production__text {
     padding: 0;
     margin: 0 0 15px 0;
     font-family: Inter;
@@ -415,4 +406,193 @@ ul {
     line-height: 150%;
     text-align: center;
     color: $color-gray6;
+}
+
+
+@media(min-width: 768px) {
+    .about-services__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media(min-width: 1024px) {
+
+    .header {
+        padding: 25px 20px;
+    }
+
+    .header__container {
+        margin: 0 auto;
+        max-width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__logo {}
+
+    .header__nav-wrapper {
+        display: block;
+    }
+
+    .header__nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header__nav-list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__nav-item {
+        padding: 0;
+        margin: 0 30px 0 0;
+    }
+
+    .header__nav-item:last-child {
+        margin: 0;
+        padding-right: 50px;
+        background-image: url(../img/bird.svg);
+        background-size: 26px 26px;
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
+
+    .header__nav-link {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: $color-white1;
+    }
+
+    .header__button-menu {
+        display: none;
+    }
+
+
+
+    .main__about {
+        max-width: 1460px;
+        margin-top: 97px;
+    }
+
+    .main__about-general {
+        width: 100%;
+        margin-bottom: 130px;
+    }
+
+    .about-general__headline {
+        margin: 0 0 50px 0;
+        font-size: 80px;
+line-height: 97px;
+    }
+
+    .about-general__text {
+        max-width: 948px;
+        margin: 0 0 75px 0;
+        font-size: 48px;
+line-height: 58px;
+    }
+
+    .about-general__img-wrapper {
+        padding: 75px 10px 100px 10px;
+    }
+
+    .about-general__img {
+        max-width: 1080px;
+    }
+
+    .main__about-part {
+        margin-bottom: 135px;
+    }
+
+    .about-part__headline {
+        margin: 0 0 35px 0;
+        font-size: 80px;
+        line-height: 97px;
+    }
+
+    .about-part__text {
+        max-width: 800px;
+        margin: 0 0 30px 0;
+        font-weight: normal;
+font-size: 24px;
+line-height: 150%;
+    }
+
+    .main__about-services {
+        margin-bottom: 165px;
+    }
+
+    .about-services__list {
+       justify-content: center;
+    }
+
+    .about-services__list-item {
+        margin: 0 35px 40px 0;
+    }
+
+
+    .main__comments {
+        margin-bottom: 175px;
+    }
+
+    .main__comments-item {
+        margin: 0 auto 130px auto;
+        width: fit-content;
+        max-width: 1115px;
+    }
+
+    // .main__comments-item:last-child {
+    //     display: none;
+    // }
+    .comments-item__text {
+        font-size: 36px;
+    }
+
+
+    .main__project {
+        max-width: 947px;
+    }
+
+    .main__project-headline {
+        margin: 0 0 45px 0;
+        font-size: 48px;
+line-height: 140%;
+    }
+
+    .main__project-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .project-buttons__button-download {
+        margin: 0 20px 0 0;
+    }
+
+    .project-buttons__button-download:last-child {
+        margin: 0;
+    }
+
+    
+    .project-production__text {
+        margin: 0 0 20px 0;
+    }
+
+
+
+
 }
