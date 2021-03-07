@@ -470,6 +470,19 @@ ul {
         justify-content: space-around;
         flex-wrap: wrap;
     }
+.footer__nav-navigation {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.nav-navigation__column {
+    padding: 0;
+    margin: 0 10px 65px 0;
+}
+
 
 
 }
