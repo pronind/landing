@@ -9,6 +9,7 @@ $color-gray5: #9E9EA0;
 $color-gray6: #808080;
 $color-gray7: #202020;
 $color-gray8: #9C9C9E;
+$color-gray9: #5E5E5E;
 $color-violet1: #9540EA;
 $color-violet2: #AC59FF;
 $color-blue1: #5F45D5;
@@ -72,6 +73,11 @@ ul {
 .link-underline {
     text-decoration: underline;
     color: $color-blue2;
+}
+
+.highlight {
+    background-color: $color-blue1;
+    color: $color-white1;
 }
 
 .header {
@@ -470,13 +476,15 @@ ul {
 
 // Pricing Page
 
-.main__pricing-page {}
+.main__pricing-page {
+    margin: 0 auto;
+}
 
 .pricing-page__tariff-container {
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .pricing-page__tariff-headline {
@@ -507,27 +515,31 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     background-color: $color-gray2;
     border-radius: 20px;
 }
+
 .tariff__card:nth-child(1) {
-   background-image: url(../img/icon3.svg);
-   background-repeat: no-repeat;
-   background-position:  top 28px center;
-   background-size: 128px 128px;
+    background-image: url(../img/icon3.svg);
+    background-repeat: no-repeat;
+    background-position: top 28px center;
+    background-size: 128px 128px;
 }
+
 .tariff__card:nth-child(2) {
     background-image: url(../img/icon2.svg);
     background-repeat: no-repeat;
-    background-position:  top 28px center;
+    background-position: top 28px center;
     background-size: 128px 128px;
- }
- .tariff__card:nth-child(3) {
+}
+
+.tariff__card:nth-child(3) {
     background-image: url(../img/icon1.svg);
     background-repeat: no-repeat;
-    background-position:  top 28px center;
+    background-position: top 28px center;
     background-size: 128px 128px;
- }
+}
 
 .tariff__card-headline {
     padding: 0;
@@ -549,6 +561,7 @@ ul {
 }
 
 .card-price__number {
+    margin-bottom: 5px;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -583,6 +596,7 @@ ul {
     line-height: 140%;
     color: $color-gray8;
 }
+
 .tariff-services__item::after {
     content: "✓";
     position: absolute;
@@ -607,6 +621,159 @@ ul {
     background-color: $color-blue1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
+}
+
+.pricing-page__additional-container {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-page__additional-headline {
+    padding: 0;
+    margin: 0 0 40px 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 54px;
+    text-align: center;
+    color: $color-white1;
+}
+
+.pricing-page__additional-text {
+    padding: 0;
+    margin: 0 0 80px 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+    color: $color-gray1;
+}
+
+.pricing-page__additional {
+    padding: 0;
+    margin: 0 0 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.additional__card {
+    padding: 160px 24px 45px 24px;
+    margin: 0 10px 20px 10px;
+    max-width: 345px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-gray2;
+    border-radius: 20px;
+}
+
+.additional__card:nth-child(1) {
+    background-image: url(../img/icon4.svg);
+    background-repeat: no-repeat;
+    background-position: top 28px center;
+    background-size: 128px 128px;
+}
+
+.additional__card:nth-child(2) {
+    background-image: url(../img/icon5.svg);
+    background-repeat: no-repeat;
+    background-position: top 28px center;
+    background-size: 128px 128px;
+}
+
+.additional__card-headline {
+    padding: 0;
+    margin: 0 0 50px 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $color-white1;
+}
+
+.additional__card-price {
+    padding: 0;
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-price__text--important {
+    color: $color-white1;
+    font-weight: bold;
+}
+
+.card-price__number--crossed {
+    margin-right: 5px;
+    font-weight: 300;
+    color: $color-gray9;
+    text-decoration: line-through;
+}
+
+.additional__card-services {
+    padding: 0;
+    margin: 0 0 25px 0;
+
+}
+
+.additional-services__item {
+    position: relative;
+    padding: 0 0 0 25px;
+    margin: 0 0 10px 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: $color-gray8;
+}
+
+.additional-services__item::after {
+    content: "✓";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+    color: $color-white1;
+}
+
+.additional__card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 40px;
+    box-sizing: border-box;
+    color: $color-white1;
+    background-color: $color-blue1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.pricing-page__additional-subtext {
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: $color-gray8;
 }
 
 @media(min-width: 768px) {
@@ -814,6 +981,56 @@ ul {
 
     }
 
+
+
+    // Pricing Page
+
+    .main__pricing-page {
+        max-width: 1300px;
+        box-sizing: border-box;
+    }
+
+    .pricing-page__tariff-container {
+        margin: 100px 0 160px 0;
+    }
+
+    .pricing-page__tariff-headline {
+        margin: 0 0 65px 0;
+        font-weight: 600;
+        font-size: 48px;
+    }
+
+    .tariff__card {
+        margin: 0 20px 0 20px;
+    }
+
+    .pricing-page__additional-container {
+        margin-bottom: 190px;
+    }
+
+    .pricing-page__additional-headline {
+        margin: 0 0 30px 0;
+        font-weight: 600;
+        font-size: 48px;
+    }
+
+    .pricing-page__additional-text {
+        max-width: 800px;
+        box-sizing: border-box;
+        margin-bottom: 100px;
+    }
+
+    .pricing-page__additional {
+        padding: 0;
+        margin: 0 0 50px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .additional__card {
+        margin: 0 20px 0 20px;
+    }
 
 
 
