@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -535,6 +536,181 @@ ul {
   color: #ffffff;
 }
 
+.pricing-page__tariff-container {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pricing-page__tariff-headline {
+  padding: 0;
+  margin: 0 0 40px 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.pricing-page__tariff {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tariff__card {
+  padding: 160px 24px 45px 24px;
+  margin: 0 10px 20px 10px;
+  max-width: 345px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1D1E1F;
+  border-radius: 20px;
+}
+
+.tariff__card:nth-child(1) {
+  background-image: url(../img/icon3.svg);
+  background-repeat: no-repeat;
+  background-position: top 28px center;
+  background-size: 128px 128px;
+}
+
+.tariff__card:nth-child(2) {
+  background-image: url(../img/icon2.svg);
+  background-repeat: no-repeat;
+  background-position: top 28px center;
+  background-size: 128px 128px;
+}
+
+.tariff__card:nth-child(3) {
+  background-image: url(../img/icon1.svg);
+  background-repeat: no-repeat;
+  background-position: top 28px center;
+  background-size: 128px 128px;
+}
+
+.tariff__card-headline {
+  padding: 0;
+  margin: 0 0 50px 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+.tariff__card-price {
+  padding: 0;
+  margin: 0 0 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-price__number {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 63px;
+  color: #ffffff;
+}
+
+.card-price__text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #9C9C9E;
+}
+
+.tariff__card-services {
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.tariff-services__item {
+  position: relative;
+  padding: 0 0 0 25px;
+  margin: 0 0 10px 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #9C9C9E;
+}
+
+.tariff-services__item::after {
+  content: "✓";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.tariff__card-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffffff;
+  background-color: #5F45D5;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
 @media (min-width: 768px) {
   .about-services__list {
     display: -webkit-box;
@@ -719,6 +895,12 @@ ul {
   }
   .project-production__text {
     margin: 0 0 20px 0;
+  }
+  .footer__nav-navigation {
+    max-width: 1115px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

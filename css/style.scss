@@ -8,6 +8,7 @@ $color-gray4: #434344;
 $color-gray5: #9E9EA0;
 $color-gray6: #808080;
 $color-gray7: #202020;
+$color-gray8: #9C9C9E;
 $color-violet1: #9540EA;
 $color-violet2: #AC59FF;
 $color-blue1: #5F45D5;
@@ -464,24 +465,170 @@ ul {
     color: $color-white1;
 }
 
+
+
+
+// Pricing Page
+
+.main__pricing-page {}
+
+.pricing-page__tariff-container {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricing-page__tariff-headline {
+    padding: 0;
+    margin: 0 0 40px 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 54px;
+    text-align: center;
+    color: $color-white1;
+}
+
+.pricing-page__tariff {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tariff__card {
+    padding: 160px 24px 45px 24px;
+    margin: 0 10px 20px 10px;
+    max-width: 345px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-gray2;
+    border-radius: 20px;
+}
+.tariff__card:nth-child(1) {
+   background-image: url(../img/icon3.svg);
+   background-repeat: no-repeat;
+   background-position:  top 28px center;
+   background-size: 128px 128px;
+}
+.tariff__card:nth-child(2) {
+    background-image: url(../img/icon2.svg);
+    background-repeat: no-repeat;
+    background-position:  top 28px center;
+    background-size: 128px 128px;
+ }
+ .tariff__card:nth-child(3) {
+    background-image: url(../img/icon1.svg);
+    background-repeat: no-repeat;
+    background-position:  top 28px center;
+    background-size: 128px 128px;
+ }
+
+.tariff__card-headline {
+    padding: 0;
+    margin: 0 0 50px 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $color-white1;
+}
+
+.tariff__card-price {
+    padding: 0;
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-price__number {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 63px;
+    color: $color-white1;
+}
+
+.card-price__text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: $color-gray8;
+}
+
+.tariff__card-services {
+    padding: 0;
+    margin: 0 0 25px 0;
+
+}
+
+.tariff-services__item {
+    position: relative;
+    padding: 0 0 0 25px;
+    margin: 0 0 10px 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: $color-gray8;
+}
+.tariff-services__item::after {
+    content: "✓";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+    color: $color-white1;
+}
+
+.tariff__card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 40px;
+    box-sizing: border-box;
+    color: $color-white1;
+    background-color: $color-blue1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
 @media(min-width: 768px) {
     .about-services__list {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-.footer__nav-navigation {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 
-}
-.nav-navigation__column {
-    padding: 0;
-    margin: 0 10px 65px 0;
-}
+    .footer__nav-navigation {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    .nav-navigation__column {
+        padding: 0;
+        margin: 0 10px 65px 0;
+    }
 
 
 
@@ -659,6 +806,14 @@ ul {
     .project-production__text {
         margin: 0 0 20px 0;
     }
+
+    .footer__nav-navigation {
+        max-width: 1115px;
+        box-sizing: border-box;
+        margin: 0 auto;
+
+    }
+
 
 
 
