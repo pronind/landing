@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                 </nav>
             </div>
             <button type="button" class="header__button-menu"><span class="visually-hidden">Открыть
-                меню</span></button>
+                    меню</span></button>
         </div>
     </header>
     <main class="main">
@@ -43,7 +44,8 @@
                 <h2 class="about-general__headline">A second brain,<br> for you, forever.</h2>
                 <p class="about-general__text">Obsidian is a powerful knowledge base that works on top of a local folder
                     of plain text Markdown files.</p>
-                <div class="about-general__img-wrapper"><img src="img/big-pic.png" srcset="img/big-pic@2x.png 2x, img/big-pic@3x.png 3x" class="about-general__img" width="312"
+                <div class="about-general__img-wrapper"><img src="img/big-pic.png"
+                        srcset="img/big-pic@2x.png 2x, img/big-pic@3x.png 3x" class="about-general__img" width="312"
                         height="164" alt="big-picture"></div>
             </div>
             <div class="main__about-part">
@@ -69,60 +71,144 @@
             <div class="main__about-services">
                 <ul class="about-services__list">
                     <li class="about-services__list-item">
-                            <div class="list-item__top"><img src="img/1.svg" class="list-item__top-img" width="280" height="224" alt=""></div>
-                            <div class="list-item__bottom">
-                                <h4 class="list-item__bottom-headline">Graph view</h4>
-                                <p class="list-item__bottom-text">View a graphical representation of all your notes and
-                                    connections, as well as open a local graph for your individual note.</p>
-                            </div>
-                        </li>
+                        <div class="list-item__top"><img src="img/1.svg" class="list-item__top-img" width="280"
+                                height="224" alt=""></div>
+                        <div class="list-item__bottom">
+                            <h4 class="list-item__bottom-headline">Graph view</h4>
+                            <p class="list-item__bottom-text">View a graphical representation of all your notes and
+                                connections, as well as open a local graph for your individual note.</p>
+                        </div>
+                    </li>
                     <li class="about-services__list-item">
-                            <div class="list-item__top"><img src="img/2.svg" class="list-item__top-img" width="280" height="224" alt="">
-                            </div>
-                            <div class="list-item__bottom">
-                                <h4 class="list-item__bottom-headline">Tag pane</h4>
-                                <p class="list-item__bottom-text">All your tags and nested tags in one place for quick
-                                    access any information.</p>
-                            </div>
-                        </li>
+                        <div class="list-item__top"><img src="img/2.svg" class="list-item__top-img" width="280"
+                                height="224" alt="">
+                        </div>
+                        <div class="list-item__bottom">
+                            <h4 class="list-item__bottom-headline">Tag pane</h4>
+                            <p class="list-item__bottom-text">All your tags and nested tags in one place for quick
+                                access any information.</p>
+                        </div>
+                    </li>
                     <li class="about-services__list-item">
-                            <div class="list-item__top"><img src="img/3.svg" class="list-item__top-img" width="280" height="224" alt=""></div>
-                            <div class="list-item__bottom">
-                                <h4 class="list-item__bottom-headline">Daily notes</h4>
-                                <p class="list-item__bottom-text">Create today's note with custom date format and
-                                    optional use a template.</p>
-                            </div>
-                        </li>
+                        <div class="list-item__top"><img src="img/3.svg" class="list-item__top-img" width="280"
+                                height="224" alt=""></div>
+                        <div class="list-item__bottom">
+                            <h4 class="list-item__bottom-headline">Daily notes</h4>
+                            <p class="list-item__bottom-text">Create today's note with custom date format and
+                                optional use a template.</p>
+                        </div>
+                    </li>
                     <li class="about-services__list-item">
-                            <div class="list-item__top"><img src="img/4.svg" class="list-item__top-img" width="280" height="224" alt=""></div>
-                            <div class="list-item__bottom">
-                                <h4 class="list-item__bottom-headline">Quick switcher</h4>
-                                <p class="list-item__bottom-text">Find any note in a moment when you think it. Jump to
-                                    or create note with keyboard only.</p>
-                            </div>
-                        </li>
+                        <div class="list-item__top"><img src="img/4.svg" class="list-item__top-img" width="280"
+                                height="224" alt=""></div>
+                        <div class="list-item__bottom">
+                            <h4 class="list-item__bottom-headline">Quick switcher</h4>
+                            <p class="list-item__bottom-text">Find any note in a moment when you think it. Jump to
+                                or create note with keyboard only.</p>
+                        </div>
+                    </li>
                     <li class="about-services__list-item">
-                            <div class="list-item__top"><img src="img/5.svg" class="list-item__top-img" width="280" height="224" alt=""></div>
-                            <div class="list-item__bottom">
-                                <h4 class="list-item__bottom-headline">Outline</h4>
-                                <p class="list-item__bottom-text">Shows the list of headings for the current note, and
-                                    allows you to navigate to another section by clicking on a heading.</p>
-                            </div>
-                        </li>
+                        <div class="list-item__top"><img src="img/5.svg" class="list-item__top-img" width="280"
+                                height="224" alt=""></div>
+                        <div class="list-item__bottom">
+                            <h4 class="list-item__bottom-headline">Outline</h4>
+                            <p class="list-item__bottom-text">Shows the list of headings for the current note, and
+                                allows you to navigate to another section by clicking on a heading.</p>
+                        </div>
+                    </li>
                     <li class="about-services__list-item">
-                            <div class="list-item__top"><img src="img/6.svg" class="list-item__top-img" width="280" height="224" alt=""></div>
-                            <div class="list-item__bottom">
-                                <h4 class="list-item__bottom-headline">Templates</h4>
-                                <p class="list-item__bottom-text">Create daily notes, week notes, month plan, summary
-                                    templates. Use predefined snippets of text into your current note.</p>
-                            </div>
-                        </li>
+                        <div class="list-item__top"><img src="img/6.svg" class="list-item__top-img" width="280"
+                                height="224" alt=""></div>
+                        <div class="list-item__bottom">
+                            <h4 class="list-item__bottom-headline">Templates</h4>
+                            <p class="list-item__bottom-text">Create daily notes, week notes, month plan, summary
+                                templates. Use predefined snippets of text into your current note.</p>
+                        </div>
+                    </li>
                 </ul>
+            </div>
+        </div>
+        <div class="main__videos">
+            <h2 class="videos__headline">Personal knowledge management platform</h2>
+            <p class="videos__text">The ultimate Obsidian HOW TO. Learn how to supercharge your note-taking and
+                note-making.</p>
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><iframe class="swiper-iframe" width="560" height="315" 
+                            src="https://www.youtube.com/embed/ms4cWMsOITs" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe class="swiper-iframe" width="560" height="315" 
+                            src="https://www.youtube.com/embed/opSENgc45Sw" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe class="swiper-iframe" width="560" height="315" 
+                            src="https://www.youtube.com/embed/lz0wZiuXCoQ" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe class="swiper-iframe" width="560" height="315" 
+                            src="https://www.youtube.com/embed/zIh1S7ra3aI" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe class="swiper-iframe" width="560" height="315" 
+                            src="https://www.youtube.com/embed/Ewhfok91AdE" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe class="swiper-iframe" width="560" height="315" 
+                            src="https://www.youtube.com/embed/QgbLb6QCK88" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe class="swiper-iframe" width="560" height="315" 
+                            src="https://www.youtube.com/embed/pf830yZf0x0" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe class="swiper-iframe" width="560" height="315" 
+                            src="https://www.youtube.com/embed/uqVx22lo9_4" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe class="swiper-iframe" width="560" height="315" 
+                            src="https://www.youtube.com/embed/SyV4xez9Lp0" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe class="swiper-iframe" width="560" height="315" 
+                            src="https://www.youtube.com/embed/QgbLb6QCK88" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+
+                </div>
+            </div>
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide"><img src="https://img.youtube.com/vi/ms4cWMsOITs/hqdefault.jpg"
+                            class="video active"><p class="video-description">Obsidian: The Most Secure Notion Alternative (not sponsored)</p>
+                    </div>
+                    <div class="swiper-slide"><img src="https://img.youtube.com/vi/opSENgc45Sw/hqdefault.jpg"
+                            class="video"><p class="video-description">Obsidian: The Most Secure Notion Alternative (not sponsored)</p></div>
+                    <div class="swiper-slide"><img src="https://img.youtube.com/vi/lz0wZiuXCoQ/hqdefault.jpg"
+                            class="video"><p class="video-description">Obsidian: The Most Secure Notion Alternative (not sponsored)</p></div>
+                    <div class="swiper-slide"><img src="https://img.youtube.com/vi/zIh1S7ra3aI/hqdefault.jpg"
+                            class="video"><p class="video-description">Obsidian: The Most Secure Notion Alternative (not sponsored)</p></div>
+                    <div class="swiper-slide"><img src="https://img.youtube.com/vi/Ewhfok91AdE/hqdefault.jpg"
+                            class="video"><p class="video-description">Obsidian: The Most Secure Notion Alternative (not sponsored)</p></div>
+                    <div class="swiper-slide"><img src="https://img.youtube.com/vi/QgbLb6QCK88/hqdefault.jpg"
+                            class="video"><p class="video-description">Obsidian: The Most Secure Notion Alternative (not sponsored)</p></div>
+                    <div class="swiper-slide"><img src="https://img.youtube.com/vi/pf830yZf0x0/hqdefault.jpg"
+                            class="video"><p class="video-description">Obsidian: The Most Secure Notion Alternative (not sponsored)</p></div>
+                    <div class="swiper-slide"><img src="https://img.youtube.com/vi/uqVx22lo9_4/hqdefault.jpg"
+                            class="video"><p class="video-description">Obsidian: The Most Secure Notion Alternative (not sponsored)</p></div>
+                    <div class="swiper-slide"><img src="https://img.youtube.com/vi/SyV4xez9Lp0/hqdefault.jpg"
+                            class="video"><p class="video-description">Obsidian: The Most Secure Notion Alternative (not sponsored)</p></div>
+                    <div class="swiper-slide"><img src="https://img.youtube.com/vi/QgbLb6QCK88/hqdefault.jpg"
+                            class="video"><p class="video-description">Obsidian: The Most Secure Notion Alternative (not sponsored)</p></div>
+
+                </div>
             </div>
         </div>
         <div class="main__comments">
             <div class="main__comments-item">
-                <p class="comments-item__text">Love how @obsdmd can actually <span class="highlight">show you the <br> connections in your
+                <p class="comments-item__text">Love how @obsdmd can actually <span class="highlight">show you the
+                        <br> connections in your
                         thinking</span></p>
                 <div class="comments-item__autor">
                     <img src="img/ava.png" class="comments-item__autor-ava" width="36" height="36" alt="ava">
@@ -130,8 +216,10 @@
                 </div>
             </div>
             <div class="main__comments-item">
-                <p class="comments-item__text">Feels great seeing the Second Brain come alive! I absolutely ❤️ Obsidian.
-                    Thank you for making such a great tool @obsdmd. <span class="highlight">Went from hating note taking to becoming a
+                <p class="comments-item__text">Feels great seeing the Second Brain come alive! I absolutely ❤️
+                    Obsidian.
+                    Thank you for making such a great tool @obsdmd. <span class="highlight">Went from hating note
+                        taking to becoming a
                         prolific note taker!</span> If you haven't used Obsidian yet what rock are you living under?
                     https://obsidian.md</p>
                 <div class="comments-item__autor">
@@ -143,15 +231,18 @@
         <div class="main__project">
             <h2 class="main__project-headline">A second brain, for you, forever.</h2>
             <div class="main__project-buttons">
-                <a href="" class="project-buttons__button-download"><img src="img/apple.svg" class="button-download__logo"
-                        width="24" height="24" alt="logo"><span class="button-download__text">Download for
+                <a href="" class="project-buttons__button-download"><img src="img/apple.svg"
+                        class="button-download__logo" width="24" height="24" alt="logo"><span
+                        class="button-download__text">Download for
                         Mac</span></a>
-                <a href="" class="project-buttons__button-download"><img src="img/windows.svg" class="button-download__logo"
-                        width="24" height="24" alt="logo"><span class="button-download__text">Download for
+                <a href="" class="project-buttons__button-download"><img src="img/windows.svg"
+                        class="button-download__logo" width="24" height="24" alt="logo"><span
+                        class="button-download__text">Download for
                         Windows</span></a>
             </div>
             <div class="main__project-production">
-                <p class="project-production__text">Beta version 0.11.3. Also <a href="" class="link">available for Linux</a></p>
+                <p class="project-production__text">Beta version 0.11.3. Also <a href="" class="link">available for
+                        Linux</a></p>
                 <p class="project-production__text">Mobile apps coming soon ✨</p>
             </div>
         </div>
@@ -198,6 +289,29 @@
             </ul>
         </nav>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            slidesPerView: 5,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs
+            }
+        });
+    </script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
